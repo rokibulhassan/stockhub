@@ -1,0 +1,25 @@
+development:
+  facebook_key: "205507346293283"
+  facebook_secret: "2ca6956f9b4366c0b774b451b6864e9c"
+
+  twitter_key: "YOUR_KEY"
+  twitter_secret: "YOUR_SECRET"
+
+  linkedin_key: "YOUR_KEY"
+  linkedin_secret: "YOUR_SECRET"
+
+  google_key: "YOUR_KEY"
+  google_secret: "YOUR_SECRET"
+
+production:
+  facebook_key: "238953272926868"
+  facebook_secret: "aa4f6994491f8acda0b5fa3ac6b5f998"
+
+  twitter_key: "YOUR_KEY"
+  twitter_secret: "YOUR_SECRET"
+
+  linkedin_key: "YOUR_KEY"
+  linkedin_secret: "YOUR_SECRET"
+
+  google_key: "YOUR_KEY"
+  google_secret: "YOUR_SECRET"

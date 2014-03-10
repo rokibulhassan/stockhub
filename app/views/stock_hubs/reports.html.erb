@@ -1,0 +1,17 @@
+<div class="row text-center">
+  <h4>
+    <span><%= link_to "Income Statement", income_statement_reporters_path(@company, target_dom_id: :report_content), remote: true %></span>
+    <span>|</span>
+    <span><%= link_to "Balance Sheet", balance_sheet_reporters_path(@company, target_dom_id: :report_content), remote: true %></span>
+    <span>|</span>
+    <span><%= link_to "Cash Flow Statement", cash_flow_statement_reporters_path(@company, target_dom_id: :report_content), remote: true %></span>
+    <span>|</span>
+    <span><%= link_to "Ratio Analysis", ratio_analysis_reporters_path(@company, target_dom_id: :report_content), remote: true %></span>
+    <span>|</span>
+    <span><%= link_to "Comparative Scenario", comparative_scenario_reporters_path(@company, target_dom_id: :report_content), remote: true %></span>
+  </h4>
+</div>
+
+<div class="row" id="report_content">
+  <div class="text-center"><h2>Please Choose a Report!</h2></div>
+</div>

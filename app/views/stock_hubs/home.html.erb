@@ -1,0 +1,52 @@
+<div class="row text-center">
+  <h2>Company</h2>
+
+  <div class="col-xs-offset-3">
+    <div class="col-xs-8 input-group">
+      <%= select_tag :company, options_from_collection_for_select(@companies, "id", "name"), class: "form-control", prompt: "Select Company" %>
+    </div>
+  </div>
+</div>
+
+<div class="clearfix">.</div>
+
+<div class="row text-center">
+
+  <div class="col-xs-4">
+    <div class="caption">
+      <h4 class="fundamental-analysis"><%= link_to "Fundamental Analysis", "#" %></h4>
+    </div>
+    <div class="thumbnail">
+      <%= image_tag "large/800x600.gif" %>
+    </div>
+  </div>
+
+
+  <div class="col-xs-4">
+    <div class="caption">
+      <h4 class="annual-report"><%= link_to "Purchase Annual Report", "#" %></h4>
+    </div>
+    <div class="thumbnail">
+      <%= image_tag "large/800x600.gif" %>
+    </div>
+  </div>
+
+
+  <div class="col-xs-4">
+    <div class="caption">
+      <h4 class="raw-data"><%= link_to "Purchase Raw Data", "#" %></h4>
+    </div>
+    <div class="thumbnail">
+      <%= image_tag "large/800x600.gif" %>
+    </div>
+  </div>
+
+</div>
+
+<script type="text/javascript">
+    $('select#company').on('change', function (e) {
+        var optionSelected = $("option:selected", this);
+        var valueSelected = this.value;
+        $('.fundamental-analysis a').attr("href", "/stock_hubs/reports?company_id=" + valueSelected);
+    });
+</script>
